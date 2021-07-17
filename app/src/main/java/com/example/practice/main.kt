@@ -13,5 +13,10 @@ fun main(){
     val lastName: String = "Nyambega";
     val fullName: String =  firstName + lastName;
     println(fullName)
-
+    // Kotlin mutable variable use var keyword
+    var currentYear: Int = 2021;
+    var dateOfBirth: Int = 1998;
+    currentYear = 2022;
+    var age = currentYear.minus(dateOfBirth);
+    println("$fullName $age");
 }
