@@ -95,8 +95,24 @@ fun main(){
     //Kotlin referential Equality for objects
     var a  = Person("jane");
     var b  = Person("Jane");
-    //exoected output false
+    //expected output false
     println(a==b);
+
+    // nullable equations in Kotlin
+    // if we want a nullable equation in Kotlin we add the equation mark since basic types
+    // are not nullable
+    var currentSchool : String  ? = "";
+    currentSchool = null; // we can now assign to null using the  ? ;
+    var currentPrice : Int ? = 1998;
+    currentPrice = 1_000_000;
+    println("${currentPrice.toString()}".length);
+
+    //Kotlin elvis operator
+    var textName : String ? = "Sharon";
+    textName= null;
+     var textLength : Int? = textName?.length ?: 0;
+    // expected output 0
+    println(textLength);
 
 }
 
