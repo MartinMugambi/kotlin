@@ -128,6 +128,14 @@ fun main(){
     println(calcArea);
     // Kotlin function with parameter
     calcPerimeter(10, 10);
+    //Kotlin constructors
+    var car = Cars("Ferrati", "Model S");
+    car.name = "Subaru";
+    car.model= "Model ZST"
+    println(car.name);
+    println(car.model);
+    println(car.getCar());
+
 }
 
 //<------------------------------------------------------------->//
@@ -166,6 +174,13 @@ fun calcPerimeter(length : Int, width: Int){
     val area = length * width;
     println(area);
 
+}
+
+//Kotlin class Car with constructor
+class Cars constructor(var name: String, var model : String){
+ fun getCar(): String{
+     return  name + model;
+ }
 }
 
 class Person(var firstName: String){
