@@ -1,6 +1,6 @@
 package com.example.practice
 // Kotlin Recap
-// fun is the shotcut of fucntion in Kotlin
+// fun is the shortcut of function in Kotlin
 
 // the fun main is used in kotlin to run application
 // write a programs that prints hellow orld in kt
@@ -87,5 +87,19 @@ fun main(){
     }
     //F T - T
     // F F -> F
+       // Kotlin Structural Equality use ===
+     var  favouriteBook : String  = "Secret Seven";
+     var favouriteGame: String = "Ruby";
+    //expected output is false;
+    println(favouriteBook==favouriteGame);
+    //Kotlin referential Equality for objects
+    var a  = Person("jane");
+    var b  = Person("Jane");
+    //exoected output false
+    println(a==b);
+
+}
+
+class Person(var firstName: String){
 
 }
