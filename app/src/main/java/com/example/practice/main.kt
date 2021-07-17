@@ -30,4 +30,13 @@ fun main(){
     } else{
         println("I like color yellow");
     }
+
+    //Kotlin if else Statement
+    // Used to check the condition of something in Kotlin
+    var learningLanguage: String = "Kotlin";
+    if(learningLanguage==="Kotlin") {
+        println("Kotlin is super fan");
+    } else{
+        println("Learning Kotlin for android development");
+    }
 }
