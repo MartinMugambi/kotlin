@@ -3,7 +3,7 @@ package com.example.practice
 // fun is the shortcut of function in Kotlin
 
 // the fun main is used in kotlin to run application
-// write a programs that prints hellow orld in kt
+// write a programs that prints hello  world in kt
 
 // Kotlin variable in is either mutable of immutable
 
@@ -113,6 +113,58 @@ fun main(){
      var textLength : Int? = textName?.length ?: 0;
     // expected output 0
     println(textLength);
+    // Kotlin function check down
+    favouriteFood();
+    // Kotlin with return function
+    var xyz = getUser();
+    println(xyz);
+    // func with return type
+    var xy = getAge();
+    println(xy);
+    // kotlin function with arguments/paramteter & return type
+    var area = calcArea(4, 5)
+    var calcArea = calcArea(20,20)
+    println(area);
+    println(calcArea);
+    // Kotlin function with parameter
+    calcPerimeter(10, 10);
+}
+
+//<------------------------------------------------------------->//
+
+//Kotlin functions
+// keywords of kotlin function is kt
+fun favouriteFood(){
+    // we are going to call the function in the main function to run
+    println("I basically like eating Rice");
+}
+
+// functions with return Types
+ fun getUser() : String{
+     var firstName: String = "Sharon";
+    var lastName: String = "Nyambega";
+    var fullName : String = "$firstName $lastName";
+    return fullName;
+   ;
+ }
+//kotlin function with return type
+fun getAge() : Int{
+    var currentYear : Int  = 2021;
+    var dateOfBirth: Int  = 2002;
+    val currentAge: Int = currentYear.minus(dateOfBirth);
+    return  currentAge;
+}
+
+//Kotlin functions with named parameters apnd return type
+ fun calcArea(width: Int, height: Int): Int{
+    val area = width * height;
+    return  area;
+ }
+
+//Kotlin function with parameter and no return type
+fun calcPerimeter(length : Int, width: Int){
+    val area = length * width;
+    println(area);
 
 }
 
