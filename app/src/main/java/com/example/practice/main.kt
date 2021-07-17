@@ -9,14 +9,25 @@ package com.example.practice
 
 fun main(){
     //immutbale varibales in kotlin they dont change
-    val firstName: String = "Sharon";
-    val lastName: String = "Nyambega";
+    // val cannot be changed at any time or situation
+    val firstName: String = "Martin";
+    val lastName: String = "Mwenda";
     val fullName: String =  firstName + lastName;
     println(fullName)
     // Kotlin mutable variable use var keyword
+    // var can be changed anywhere and any time
     var currentYear: Int = 2021;
     var dateOfBirth: Int = 1998;
     currentYear = 2022;
     var age = currentYear.minus(dateOfBirth);
     println("$fullName $age");
+
+    //Kotlin Booleans
+    var favouriteCOlor: Boolean = true;
+    println("$favouriteCOlor");
+    if(favouriteCOlor === true){
+        println("I like color blue");
+    } else{
+        println("I like color yellow");
+    }
 }
