@@ -8,7 +8,7 @@ package com.example.practice
 // Kotlin variable in is either mutable of immutable
 
 fun main(){
-    //immutbale varibales in kotlin they dont change
+    //immutbale variables in kotlin they dont change
     // val cannot be changed at any time or situation
     val firstName: String = "Martin";
     val lastName: String = "Mwenda";
@@ -39,4 +39,53 @@ fun main(){
     } else{
         println("Learning Kotlin for android development");
     }
+    //Kotlin Truth Tables
+    // AND -> symbol &&
+    // OR symbol -> |
+    //AND Truth Table-
+     // T T -> T
+    // pratice
+    var currentDate: Int = 2021;
+    var currentTime : Double = 11.59;
+    // expected output is True
+     if((currentDate===2021) && (currentTime==11.59)){
+         println("true")
+     } else{
+         println("false")
+     }
+     //T  F -> F
+    //expected output is false
+     if((currentDate==2021) && currentTime==1.58){
+         println("true")
+     } else{
+         println("false");
+     }
+    // F T -> F
+    var currentPassword : String  = "qwerty";
+    var updatedPassword : String = "shazam";
+    if((currentPassword== "martin") && (updatedPassword === "shazm")){
+        println("true");
+    } else{
+        println("false");
+    }
+   // final Truth Table  F F -> F
+    // expected output is false;
+    if((currentPassword === "home ") &&(updatedPassword==="mongo")){
+        println("true")
+    } else {
+        println("false");
+    }
+
+        // OR logical opertator
+        //T T -> T
+    // T F- T
+    // expected output  true
+    if((currentPassword==="qwerty") || (updatedPassword==="true")){
+        println("true");
+    } else{
+        println("false");
+    }
+    //F T - T
+    // F F -> F
+
 }
