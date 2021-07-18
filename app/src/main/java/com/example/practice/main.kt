@@ -129,13 +129,17 @@ fun main(){
     // Kotlin function with parameter
     calcPerimeter(10, 10);
     //Kotlin constructors
-    var car = Cars("Ferrati", "Model S");
+    var car = Cars("Ferrati");
     car.name = "Subaru";
-    car.model= "Model ZST"
-    println(car.name);
+    println("${car.name}, ${car.model}");
     println(car.model);
     println(car.getCar());
+    car.updateCarName("Sharon");
 
+    // calling class Food with the constructor
+    var foo = Food("Chapati");
+    foo.foodName = "Mokimo";
+    foo.getFood();
 }
 
 //<------------------------------------------------------------->//
@@ -176,12 +180,19 @@ fun calcPerimeter(length : Int, width: Int){
 
 }
 
-//Kotlin class Car with constructor
-class Cars constructor(var name: String, var model : String){
+//Kotlin class Car with constructor the constructor are turned into
+//properties which we can get to use;
+class Cars constructor(var name: String, var model : String ="Myambega"){
  fun getCar(): String{
      return  name + model;
  }
+    fun updateCarName(newName:String){
+        name = newName;
+        println(name +model);
+    }
 }
+
+
 
 class Person(var firstName: String){
 
