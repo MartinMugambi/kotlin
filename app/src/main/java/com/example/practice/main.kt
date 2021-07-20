@@ -140,6 +140,27 @@ fun main(){
     var foo = Food("Chapati");
     foo.foodName = "Mokimo";
     foo.getFood();
+    var food = Food("Spinach");
+    println(food);
+    var ct = Food("Lunch", "Pips");
+    println(ct);
+
+    //phase two
+    var ph = Phase(10);
+    ph.getArea();
+
+    println(ph.sharon);
+    if (ph.sharon=="i love you".toUpperCase()){
+        println("Thanks you so much")
+    } else{
+        println("Learning on Twitter");
+    }
+   // Get
+     // Get User
+     var use = User.getList(9);
+    println(use);
+    val useq = User.user;
+    useq.forEach { println(it) }
 }
 
 //<------------------------------------------------------------->//
